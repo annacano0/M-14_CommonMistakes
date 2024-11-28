@@ -1,11 +1,24 @@
 <script setup>
-import KeyForSample from './components/KeyForSample.vue'
-import WatchArrayExample from './components/WatchArrayExample.vue';
+import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 
 <template>
-  <KeyForSample></KeyForSample>
-  <WatchArrayExample></WatchArrayExample>
+   <header>
+      <nav>
+        <ul>
+          <li>        
+            <RouterLink to="/examples">Other examples</RouterLink>
+          </li>
+          <li>        
+            <RouterLink to="/about">About</RouterLink>
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+  <RouterView />
+
 </template>
 
 <style scoped></style>
